@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:clipChildren="true"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="448dp"
+        android:layout_height="201dp"
+        android:layout_marginBottom="39dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_paswd"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_sing_in_background" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <TextView
+        android:id="@+id/sing_in"
+        android:layout_width="154dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="@string/sing_in"
+        android:textAlignment="center"
+        android:textSize="40sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/round_corner"
+        android:ems="10"
+        android:fontFamily="@font/raleway_bold"
+        android:hint="@string/username"
+        android:inputType="phone|textEmailAddress"
+        android:paddingStart="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/sing_in"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/user_paswd"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_corner"
+        android:ems="10"
+        android:fontFamily="@font/raleway_bold"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/user_name"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/show_passwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/user_paswd"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/user_paswd"
+        app:srcCompat="@drawable/ic_eye"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/forgot_passwd"
+        android:layout_width="134dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="48dp"
+        android:clickable="true"
+        android:fontFamily="@font/raleway_bold"
+        android:paddingStart="5dp"
+        android:text="@string/forgot_password"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/user_paswd"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="235dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/round_corner_button"
+        android:fontFamily="@font/raleway_bold"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/user_paswd" />
+
+    <TextView
+        android:id="@+id/sing_up_inner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:fontFamily="@font/raleway_bold"
+        android:text="@string/sign_up"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sing_up_text"
+        app:layout_constraintEnd_toEndOf="@+id/user_paswd"
+        app:layout_constraintTop_toBottomOf="@+id/login_button"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/alipay_ico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/wechat_ico"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="@+id/sing_in"
+        app:layout_constraintTop_toBottomOf="@+id/login_button"
+        app:srcCompat="@drawable/ic_alipay"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/wechat_ico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/alipay_ico"
+        app:layout_constraintEnd_toEndOf="@+id/sing_in"
+        app:layout_constraintTop_toBottomOf="@+id/login_button"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_wechat"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/sing_up_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="@string/don_t_have_an_account"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/alipay_ico"
+        app:layout_constraintStart_toStartOf="@+id/user_paswd" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
