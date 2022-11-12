@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -142,6 +143,18 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
+        android:id="@+id/wechat_ico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/alipay_ico"
+        app:layout_constraintEnd_toEndOf="@+id/sing_in"
+        app:layout_constraintTop_toBottomOf="@+id/login_button"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_wechat"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
         android:id="@+id/alipay_ico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -153,18 +166,6 @@
         app:layout_constraintTop_toBottomOf="@+id/login_button"
         app:srcCompat="@drawable/ic_alipay"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-    <ImageView
-        android:id="@+id/wechat_ico"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="@+id/alipay_ico"
-        app:layout_constraintEnd_toEndOf="@+id/sing_in"
-        app:layout_constraintTop_toBottomOf="@+id/login_button"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_wechat"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/sing_up_text"

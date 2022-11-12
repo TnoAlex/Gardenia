@@ -23,5 +23,14 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        mavenCentral() // Warning: this repository is going to shut down soon
+        maven { url 'https://jitpack.io' }
+    }
+}
 rootProject.name = "Gardenia"
 include ':app'
