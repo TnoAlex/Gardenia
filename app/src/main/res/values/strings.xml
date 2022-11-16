@@ -13,4 +13,11 @@
     <string name="phone_email">Phone/Email</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="or_sign_up_using">Or sign up using</string>
+    <string name="analytics_text">分析</string>
+    <string name="analytics_sub_text_light">基于历史数据的分析</string>
+    <string name="rehabilitation_ratio_text">康复训练完成率</string>
+    <string name="heart_rate">心率</string>
+    <string name="bpm">Bpm</string>
+    <string name="none">None</string>
+    <string name="week_overview">本周记录</string>
 </resources>

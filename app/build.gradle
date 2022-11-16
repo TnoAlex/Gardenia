@@ -3,7 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 android {
-    compileSdk 33
+    compileSdk 32
     //WVVM
     dataBinding {
         enabled = true
@@ -11,7 +11,7 @@ android {
     defaultConfig {
         applicationId "com.alex.gardenia"
         minSdk 30
-        targetSdk 33
+        targetSdk 32
         versionCode 1
         versionName "1.0"
 
@@ -48,7 +48,7 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-    implementation("com.github.PhilJay:MPAndroidChart:v3.0.0")
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
     implementation('com.squareup.okhttp3:okhttp:5.0.0-alpha.10')
     // https://mvnrepository.com/artifact/com.squareup.okio/okio
     implementation("com.squareup.okio:okio:3.2.0")
