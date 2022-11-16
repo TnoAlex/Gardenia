@@ -20,4 +20,21 @@
     <string name="bpm">Bpm</string>
     <string name="none">None</string>
     <string name="week_overview">本周记录</string>
+    <string name="back">back</string>
+    <string name="patient_info_text">病人信息</string>
+    <string name="patient_weight">体重</string>
+    <string name="patient_weight_value">%s kg</string>
+    <string name="patient_height_value">%s cm</string>
+    <string name="patient_height_text">身高</string>
+    <string name="patient_scheme">计划</string>
+    <string name="patient_scheme_value">%s</string>
+    <string name="process_ratio">计划进度</string>
+    <string name="append_recode">补入记录</string>
+    <string name="patient_append_recode_date">%s%s%s</string>
+    <string name="patient_append_recode_time">%s%sMin</string>
+    <string name="button">button</string>
+    <string name="history_recorde">历史记录</string>
+    <string name="patient_history_list_item_date">%s</string>
+    <string name="patient_history_list_item_value">%s%s%s%sMin</string>
+
 </resources>
