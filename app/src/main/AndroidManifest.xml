@@ -17,6 +17,9 @@
         android:theme="@style/Theme.Gardenia"
         tools:targetApi="31">
         <activity
+            android:name=".PatientMain"
+            android:exported="false" />
+        <activity
             android:name=".activity.PatientInfoActivity"
             android:exported="false" />
         <activity

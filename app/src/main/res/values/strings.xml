@@ -27,7 +27,7 @@
     <string name="patient_height_value">%s cm</string>
     <string name="patient_height_text">身高</string>
     <string name="patient_scheme">计划</string>
-    <string name="patient_scheme_value">%s</string>
+    <string name="single_character">%s</string>
     <string name="process_ratio">计划进度</string>
     <string name="append_recode">补入记录</string>
     <string name="patient_append_recode_date">%s%s%s</string>
@@ -36,5 +36,7 @@
     <string name="history_recorde">历史记录</string>
     <string name="patient_history_list_item_date">%s</string>
     <string name="patient_history_list_item_value">%s%s%s%sMin</string>
+    <string name="main_text">主页</string>
+    <string name="patient_calendar_text">治疗日程</string>
 
 </resources>
