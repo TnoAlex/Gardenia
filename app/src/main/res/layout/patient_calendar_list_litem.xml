@@ -1,11 +1,13 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="50dp"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     app:cardBackgroundColor="@color/purple_300"
     app:cardCornerRadius="10dp"
-    app:cardElevation="5dp">
+    app:cardElevation="5dp"
+    tools:ignore="RtlSymmetry">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,16 +22,16 @@
             android:gravity="center"
             android:text="@string/single_character"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/calendar_date"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center|bottom"
             android:text="@string/single_character"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="16sp" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

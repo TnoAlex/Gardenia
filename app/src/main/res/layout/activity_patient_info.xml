@@ -8,6 +8,20 @@
     tools:context=".activity.PatientInfoActivity">
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/patient_info_top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="40dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/patient_info_end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="60dp" />
+
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/patient_info_left_guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,16 +37,18 @@
 
     <LinearLayout
         android:layout_width="354dp"
-        android:layout_height="770dp"
+        android:layout_height="756dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="60dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageButton
             android:id="@+id/patient_info_back"
@@ -266,7 +282,8 @@
                 <ListView
                     android:id="@+id/path_recode_history_list"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:dividerHeight="5dp" />
             </LinearLayout>
         </LinearLayout>
 

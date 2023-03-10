@@ -30,13 +30,19 @@
     <string name="single_character">%s</string>
     <string name="process_ratio">计划进度</string>
     <string name="append_recode">补入记录</string>
-    <string name="patient_append_recode_date">%s%s%s</string>
-    <string name="patient_append_recode_time">%s%sMin</string>
+    <string name="patient_append_recode_date">补入时间</string>
+    <string name="patient_append_recode_time">补入时长 Min</string>
     <string name="button">button</string>
     <string name="history_recorde">历史记录</string>
     <string name="patient_history_list_item_date">%s</string>
     <string name="patient_history_list_item_value">%s%s%s%sMin</string>
     <string name="main_text">主页</string>
     <string name="patient_calendar_text">治疗日程</string>
+    <string name="exit">退出</string>
+    <string name="user_center">个人中心</string>
+    <string name="about">关于</string>
+    <string name="target_process">目标进度</string>
+    <string name="bar_open">侧边栏打开</string>
+    <string name="bar_close">侧边栏关闭</string>
 
 </resources>
