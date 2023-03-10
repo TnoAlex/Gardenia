@@ -1,9 +1,10 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.devtools.ksp' version "1.7.10-1.0.6"
 }
 android {
-    compileSdk 32
+    compileSdk 33
     //WVVM
     dataBinding {
         enabled = true
@@ -14,7 +15,7 @@ android {
     defaultConfig {
         applicationId "com.alex.gardenia"
         minSdk 29
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -28,29 +29,30 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = '17'
+        jvmTarget = '11'
     }
     buildFeatures {
         viewBinding true
     }
+
 }
 
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.9.0'
-    implementation 'androidx.appcompat:appcompat:1.5.1'
-    implementation 'com.google.android.material:material:1.7.0'
-    implementation 'androidx.annotation:annotation:1.5.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.annotation:annotation:1.6.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0'
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
     implementation('com.squareup.okhttp3:okhttp:5.0.0-alpha.11')
     // https://mvnrepository.com/artifact/com.squareup.okio/okio
@@ -62,12 +64,17 @@ dependencies {
     // https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-core
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
     // https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-runtime-ktx
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.0")
     // https://mvnrepository.com/artifact/androidx.drawerlayout/drawerlayout
     runtimeOnly("androidx.drawerlayout:drawerlayout:1.1.1")
     // https://mvnrepository.com/artifact/androidx.recyclerview/recyclerview
-    runtimeOnly("androidx.recyclerview:recyclerview:1.2.1")
+    runtimeOnly("androidx.recyclerview:recyclerview:1.3.0")
     // https://mvnrepository.com/artifact/com.contrarywind/Android-PickerView
     implementation("com.github.loperSeven:DateTimePicker:0.6.0")
-    implementation("com.google.android.material:material:1.7.0")
+    implementation("com.google.android.material:material:1.8.0")
+    implementation ("com.polidea.rxandroidble3:rxandroidble:1.17.2")
+
+    implementation "androidx.room:room-runtime:2.5.0"
+    annotationProcessor "androidx.room:room-compiler:2.5.0"
+    ksp "androidx.room:room-compiler:2.5.0"
 }
