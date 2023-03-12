@@ -19,6 +19,9 @@ import com.alex.gardenia.component.CalendarListDecoration
 import com.alex.gardenia.utils.showRingPieChart
 import com.alex.gardenia.databinding.MainActivityBinding
 import com.alex.gardenia.databinding.PatientCalendarListLitemBinding
+import com.elvishew.xlog.LogConfiguration
+import com.elvishew.xlog.LogLevel
+import com.elvishew.xlog.XLog
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,6 +33,7 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("RtlHardcoded")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        initLog()
         setContentView(R.layout.main_activity)
         viewBinding = MainActivityBinding.inflate(layoutInflater)
         calendarItemBinding = PatientCalendarListLitemBinding.inflate(layoutInflater)
@@ -122,6 +126,15 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    private fun initLog() {
+        val config = LogConfiguration.Builder()
+            .logLevel(LogLevel.ALL)
+            .enableThreadInfo()
+            .enableStackTrace(3)
+            .build()
+        XLog.init(config)
     }
 
 }
